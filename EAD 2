@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscriçôes para o evento TECH 2024</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Inscriçôes para o evento TECH 2024</h1>
+
+    <p>Complete o formulário abaixo para se inscrever no evento </p>
+    <form action="cadastro.java">
+        <P><label for="inome">Nome completo: </label>
+            <input type="text" name="nome" id="isome"> </P>
+        <p><label for="iemail">E-mail: </label>
+            <input type="email" name="E-mail" id="iemail"> </p>
+            <p>
+                <label for="isen">Senha: </label>
+                <input type="password" name="sen" id="isen">
+            </p>
+            <p>
+                <label for="iidade">Idade: </label>
+                <input type="number" name="idade" id="iidade">
+            </p>
+            <p>
+                <label for="idata">Data de nascimento: </label>
+                <input type="date" min="1900-01-01" max="2024-03-05" name="Data" id="idata">
+            </p>
+            <p>
+                <label for="iest">Preferências do evento: </label>
+                <SELECT> name="selecione um tema de interesse" id="iest"
+                    <option value="front">Front-End</option>
+                    <option value="back">Back-End</option>
+                    <option value="full">Full Stack</option>
+                    <option value="dados">Ciência de dados</option>
+                </SELECT>
+
+                <fieldset>
+                    <legend> </legend>
+                    <input type="checkbox" name="seg0" id="iseg0"> Desenvolvimento web moderno <br>
+                    <input type="checkbox" name="seg1" id="iseg1"> Introdução à inteligência artificial <br>
+                    <input type="checkbox" name="seg2" id="iseg3"> Segurança na internet<br>
+                </fieldset>
+                <p>Sumissão de apresentação: </p>
+                <p>
+                    <label for="iapre"></label>
+                    <textarea name="iapre" id="apre" cols="30" rows="1">Título de apresentação</textarea>
+                </p>
+                <p>
+                    <label for="ires"></label>
+                    <textarea name="res" id="ires" cols="30" rows="10">Resumo de apresentação</textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Escolher ficheiro">
+                    <label for="ibot">Nenhum ficheiro selecionado</label>
+                </p>
+                <p> </p>
+                <p> </p>
+            </p>
+        <p><input type="submit" value="Enviar inscrição"></p>
+    </form>
+</body>
+</html>
